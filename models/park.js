@@ -40,7 +40,7 @@ Park.prototype.dinosaursOfParticularSpecies = function(){
 };
 
 Park.prototype.removeDinosaursOfParticularSpecies = function(){
-  for (const dinosaur of this.dinosaurs){
+  for (const dinosaur in this.dinosaurs){
     if (dinosaur.species === 'herbivore'){
      this.dinosaur.shift(dinosaur);
    };
